@@ -10,6 +10,7 @@ Toiminnan voi testata ssh kayttaja@localhost, sulkeminen exit komennolla.
 
 Julkisen avainparin luonti:
 > ssh-keygen # enter enter enter niin saat oletusasetukset
+
 > ssh-copy-id localhost
 
 Kokeile kirjautumalla, pitäisi mennä ilman salasanaa. Lopuksi artikkelissa on myös muutama troubleshooting-komento.
