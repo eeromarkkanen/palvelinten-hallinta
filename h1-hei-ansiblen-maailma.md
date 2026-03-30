@@ -17,21 +17,28 @@ Kokeile kirjautumalla, pitäisi mennä ilman salasanaa. Lopuksi artikkelissa on 
 
 Toinen [artikkeli](https://terokarvinen.com/hello-ansible/) kertoo ansiblen asennuksesta ja käytöstä. Ansible on konfiguraationhallintatyökalu, jolla voi hallita useita palvelimia yhdeltä koneelta. Käytössä kuvaillaan haluttu lopputulos ohjatuille palvelimille, ja ansible tekee muutoksia ainoastaan jos ne ovat tarpeellisia.
 Artikkeli käy läpi ansiblen peruskonfiguraatiot:
-> hosts.ini <- mihin konfiguraatiot tallennetaan 
+> hosts.ini <- mihin konfiguraatiot tallennetaan
+
 > sites.yml <- mihin kohteisiin tehdään ja mitkä roolit tekevät
+
 > main.yml <- lisätään /roles/hello/tasks/ mitä tehdään kohteissa (esimerkissä lisätään tekstitiedosto /tmp kansioon)
 
 Lisäksi käydään läpi muutamia konfiguraatioita helpottavia asioita kuten micro-editori ja tree-työkalu. Lopuksi vielä yleisimpiä vianmäärityksiä, kuten välilyöntien määrä. YAML vaatii aina 2 välilyöntiä, jotta se toimii. Myös salasanan kysyminen voidaan lisätä --ask-become-pass.
 
 ## (a Sshecrets. Asenna SSH-demoni ja testaa se kirjautumalla SSH:lla.
 > sudo apt-get update
+
 > sudo apt-get install -y ssh
+
 > ssh eerom@localhost
+
 Kysyy salasanaa ja kirjautuminen onnistuu. Poistutaan exit ja tehdään seuraavaksi public key kirjautumisen nopeuttamiseksi.
 
 ## b) Pubkey. Automatisoi ssh-kirjautuminen julkisella avaimella
 > ssh-keygen # tallennetaan oletusasetukset enterillä
+
 > ssh-copy-id eerom@localhost
+
 Nyt kirjautuminen onnistuu ilman salasanaa.
 
 ## c) Hei Ansible. Tee hei maailma ansiblella ja kokeile sitä SSH:n yli.
