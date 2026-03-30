@@ -3,11 +3,15 @@
 Ensimmäinen [artikkeli](https://terokarvinen.com/ssh-public-key-login-without-password/) käy läpi SSH:n käyttöönoton ja julkisen avaimen käyttöönoton.
 Asennus:
 > sudo apt-get install -y ssh
+
 > sudo systemctl enable --now ssh
+
 Toiminnan voi testata ssh kayttaja@localhost, sulkeminen exit komennolla.
+
 Julkisen avainparin luonti:
 > ssh-keygen # enter enter enter niin saat oletusasetukset
 > ssh-copy-id localhost
+
 Kokeile kirjautumalla, pitäisi mennä ilman salasanaa. Lopuksi artikkelissa on myös muutama troubleshooting-komento.
 
 Toinen [artikkeli](https://terokarvinen.com/hello-ansible/) kertoo ansiblen asennuksesta ja käytöstä. Ansible on konfiguraationhallintatyökalu, jolla voi hallita useita palvelimia yhdeltä koneelta. Käytössä kuvaillaan haluttu lopputulos ohjatuille palvelimille, ja ansible tekee muutoksia ainoastaan jos ne ovat tarpeellisia.
