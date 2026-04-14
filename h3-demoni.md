@@ -26,10 +26,15 @@
 Aloitin poistamalla apache2, jotta voin tehdä tämän alusta.
 
 sudo apt-get install apache2
+
 (välissä piti pysäyttää nginx kun sitä olin tunnilla asentanut)
+
 sudo systemctl start apache2
+
 curl localhost
+
 <img width="818" height="359" alt="image" src="https://github.com/user-attachments/assets/1f58e989-83b7-4fd3-8ff4-0294d7b16314" />
+
 Kuvassa näkyy vanhat konfiguraatiot, koska en poistanut kaikkea apache2 liittyvää purge-komennolla.
 
 Tässä kohtaa ihmettelin, miksi vanha sivu näkyi, vaikka mikään ei osoittanut /public_html/ kansioon, jossa html-tiedosto on. Selvittämisen jälkeen selvisi, että olin joskus kirjoittanut /var/www/html/ tiedoston päälle saman tekstin. Älä tee näin :)
@@ -37,13 +42,17 @@ Tässä kohtaa ihmettelin, miksi vanha sivu näkyi, vaikka mikään ei osoittanu
 Eli default.conf osoitti var/www/html josta tämä sivu löytyi. Vaihdoin apache2 käyttämään uutta newsite.conf tiedostoa, joka osoittaa kotihakemiston public_html kansioon.
 
 sudo a2ensite newsite.conf
+
 sudo a2dissite 000-default.conf [lähde](https://manpages.ubuntu.com/manpages/focal/man8/a2ensite.8.html)
+
 sudo systemctl reload apache2
 
 Lisäsin oikeudet kansioihin ja tiedostoon:
+
 <img width="658" height="74" alt="image" src="https://github.com/user-attachments/assets/d1c8764b-0db7-4e84-957c-dd405c0cd17a" />
 
 Tulos:
+
 <img width="543" height="122" alt="image" src="https://github.com/user-attachments/assets/5266e379-3817-4067-85ec-6eaf0861c942" />
 
 ## b) Moottorix. Asenna Nginx käsin. Weppisivun tulee näkyä palvelimen etusivulla. Sivun tulee olla tavallisen käyttäjän muokattavissa, ilman root- tai sudo-oikeuksia. (Muista sammuttaa Apache ensin.)
@@ -96,6 +105,7 @@ Muutin tiedostoa ja kokeilin ajaa playbookin uudestaan. Testistä tuli ainoastaa
 
 Huomasin vielä palautuksen jälkeen, että kotisivu.conf ei ollut oikeassa files-kansiossa niinkuin halusin. Siirsin sen sinne ja ajoin playbookin uudestaan ilman virheitä. (14.4.2026 13:23) 
 
+
 <img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/9b6a8e13-3279-4099-b4a0-7f1daa768b87" />
 
 tasks/main.yml:
@@ -130,3 +140,7 @@ Ubuntu Manual. URL: https://manpages.ubuntu.com/manpages/focal/man8/a2ensite.8.h
 KodeKloud. NGINX for Beginners. URL: https://www.youtube.com/watch?v=Hfg7_y0fGTg&list=PL2We04F3Y_40fFklIDYcdA9B_nUK9_c6a (50:40->) Katsottu 14.4.2026
 
 ChatGPT kotisivun luomisessa. chat.openai.com
+
+### edits
+
+14.4.2026 13:26 muokattu muotoilua luettavammaksi
