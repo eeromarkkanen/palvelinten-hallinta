@@ -94,6 +94,8 @@ Lopuksi halusin kokeilla toimintaa muuttamalla kotisivua /public_html/index.html
 
 Muutin tiedostoa ja kokeilin ajaa playbookin uudestaan. Testistä tuli ainoastaan OK eikä Changed, mutta kotisivu muuttui.
 
+Huomasin vielä palautuksen jälkeen, että kotisivu.conf ei ollut oikeassa files-kansiossa niinkuin halusin. Siirsin sen sinne ja ajoin playbookin uudestaan ilman virheitä. (14.4.2026 13:23) 
+
 <img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/9b6a8e13-3279-4099-b4a0-7f1daa768b87" />
 
 tasks/main.yml:
