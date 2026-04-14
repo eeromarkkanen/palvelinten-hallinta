@@ -96,6 +96,22 @@ Muutin tiedostoa ja kokeilin ajaa playbookin uudestaan. Testistä tuli ainoastaa
 
 <img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/9b6a8e13-3279-4099-b4a0-7f1daa768b87" />
 
+tasks/main.yml:
+<img width="611" height="465" alt="image" src="https://github.com/user-attachments/assets/fef11201-f28d-4dcc-9db2-0d995fa39e0a" />
+
+handlers/main.yml:
+<img width="611" height="114" alt="image" src="https://github.com/user-attachments/assets/2965510f-741c-4d2e-b24f-21082f020e28" />
+
+kotisivu.conf:
+<img width="571" height="327" alt="image" src="https://github.com/user-attachments/assets/d0bfc714-1d68-4774-b763-748b851ab39d" />
+
+playbook site.yml:
+<img width="414" height="259" alt="image" src="https://github.com/user-attachments/assets/b83fdec5-90cd-4865-bd34-038fb0d6cf2f" />
+
+
+
+
+
 
 ## Lähteet
 
@@ -106,3 +122,5 @@ Karvinen, T. 2026. Apache installed with Ansible - quick notes. URL: https://ter
 Ubuntu Manual. URL: https://manpages.ubuntu.com/manpages/focal/man8/a2ensite.8.html Luettu 14.4.2026
 
 KodeKloud. NGINX for Beginners. URL: https://www.youtube.com/watch?v=Hfg7_y0fGTg&list=PL2We04F3Y_40fFklIDYcdA9B_nUK9_c6a (50:40->) Katsottu 14.4.2026
+
+ChatGPT kotisivun luomisessa. chat.openai.com
