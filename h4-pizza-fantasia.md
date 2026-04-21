@@ -95,7 +95,7 @@ Sitten ajetaan playbook uudestaan ja toivotaan että tilanne palaa ennalleen:
 
 <img width="944" height="499" alt="image" src="https://github.com/user-attachments/assets/fd2b1f4b-1bef-4db8-99c1-481e1cb8c29d" />
 
-Tomii:
+Toimii:
 
 <img width="877" height="213" alt="image" src="https://github.com/user-attachments/assets/3a456593-edfa-46e3-90ee-14127647f6f8" />
 
