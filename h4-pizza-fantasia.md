@@ -53,20 +53,13 @@ Taskit menivät siis läpi, mutta koska postgresql oli jo asennettuna niin tulok
 
 Ensimmäiseksi etsin oikean polun, että voin muuttaa jotain asetusta.
 
-´´´´
-
-/etc/postgresql/15/main/conf.d/
-
-´´´´ 
+> /etc/postgresql/15/main/conf.d/
 
 Lisäsin tiedostoon lokien keräyksen: 
 
-´´´´
+> logging_collector = on
 
-logging_collector = on
-log_destination = 'stderr'
-
-´´´´ 
+> log_destination = 'stderr'
 
 [Postgresql](https://www.postgresql.org/docs/current/runtime-config-logging.html)
 
@@ -84,11 +77,7 @@ Kuvasta nähdään, että tiedosto kopioitiin uuteen paikkaan. Ja koska muutoksi
 
 Lähdin poistamaan postgresql
 
-´´´´
-
-sudo apt-get purge postgresql
-
-´´´´
+> sudo apt-get purge postgresql
 
 Mutta tämä ei auttanut, vaan koneelle jäi vielä paketteja. 
 
@@ -96,11 +85,7 @@ Mutta tämä ei auttanut, vaan koneelle jäi vielä paketteja.
 
 Muutin komentoa
 
-´´´´
-
-sudo apt-get purge -y 'postgresql*'
-
-´´´´
+> sudo apt-get purge -y 'postgresql*'
 
 jotta se sisältää kaikki paketit jotka sisältävät postgresql.
 
