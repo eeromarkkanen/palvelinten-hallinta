@@ -41,7 +41,7 @@ Sitten tekemään muutoksia. Luon vain yksinkertaisen helloworld-tiedoston, jott
 
 Seuraava vaihe on puskea kaikki tiedostot takaisin, jotta muutokset on näkyvillä.
 
-git add --all
+>>>>git add --all
 git commit
 git pull
 git push
@@ -53,7 +53,7 @@ Tässä muutos myös GitHubin puolella:
 <img width="835" height="282" alt="image" src="https://github.com/user-attachments/assets/a990c8d0-4e60-445d-a882-1f90a6e92d3c" />
 
 
-##) C) Doh! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’.
+## C) Doh! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’.
 
 Muokkasin äsken luotua tiedostoa, jotta voin poistaa tehdyt muutokset.
 
