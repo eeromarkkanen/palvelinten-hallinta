@@ -41,10 +41,13 @@ Sitten tekemään muutoksia. Luon vain yksinkertaisen helloworld-tiedoston, jott
 
 Seuraava vaihe on puskea kaikki tiedostot takaisin, jotta muutokset on näkyvillä.
 
->>>>git add --all
-git commit
-git pull
-git push
+´´´´ git add --all
+
+´´´´ git commit
+
+´´´´ git pull
+
+```` git push
 
 <img width="611" height="350" alt="image" src="https://github.com/user-attachments/assets/d292dceb-62c4-4fc1-b192-fe44f4e52ce2" />
 
