@@ -114,6 +114,8 @@ Löytyy yksi muokattu tiedosto, joka täytyy lisätä git add komennolla valmiik
 
 <img width="662" height="467" alt="image" src="https://github.com/user-attachments/assets/d58b80be-ddd6-4fb5-b1a0-e0c14c1727b3" />
 
+Tässä kohtaa unohtui ottaa screenshot asiasta, mutta yllä näkyy että myös muokattu site.yml -tiedosto on commit-listalla.
+
 Tarkistin vielä lopuksi git status:
 
 <img width="555" height="148" alt="image" src="https://github.com/user-attachments/assets/00bd1f18-11ce-45fd-a1ae-0d317f0b88f5" />
