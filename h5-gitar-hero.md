@@ -41,13 +41,13 @@ Sitten tekemään muutoksia. Luon vain yksinkertaisen helloworld-tiedoston, jott
 
 Seuraava vaihe on puskea kaikki tiedostot takaisin, jotta muutokset on näkyvillä.
 
-´´´´ git add --all
+git add --all
 
-´´´´ git commit
+git commit
 
-´´´´ git pull
+git pull
 
-```` git push
+git push
 
 <img width="611" height="350" alt="image" src="https://github.com/user-attachments/assets/d292dceb-62c4-4fc1-b192-fe44f4e52ce2" />
 
@@ -122,6 +122,7 @@ Tarkistin vielä lopuksi git status:
 ## F) Hae pari projektiin Moodlen keskustelusta.
 
 Viesti lähetetty Moodlessa, odotetaan vahvistusta.
+
 
 ## Lähteet
 
